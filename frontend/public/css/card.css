@@ -2,3 +2,44 @@ img.card-star {
     width: 20px;
     text-shadow: 0 10px 5px 0 black;
 }
+
+.card-image {
+    position: relative;
+}
+
+.card-status {
+    position: absolute;
+    left: 7px;
+    top: 7px;
+    background-color: white;
+    padding: 3px 8px;
+    border-radius: 2px;
+    user-select: none;
+    font-weight: 600;
+}
+
+.card-image img {
+    border-radius: 9px;
+}
+
+.card-info {
+    margin-top: 3px;
+}
+
+.card-info * {
+    margin: 0;
+}
+
+.card-info-1 {
+    display: flex;
+    gap: 3px;
+}
+
+.card-rating-con {
+    display: flex;
+    gap: 1.5px;
+}
+
+.card-info-2 {
+    margin: 8px 0;
+}
