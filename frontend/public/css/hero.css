@@ -1,0 +1,18 @@
+.hero {
+    padding: 4vw;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.hero .photo-grid {
+    width: 100%;
+}
+
+.hero-header {
+    margin-bottom: 4px;
+}
+
+.hero-paragraph {
+    margin-top: 4px;
+}
