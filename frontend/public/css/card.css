@@ -1,3 +1,9 @@
+.menu-cards {
+    display: flex;
+    overflow-y: auto;
+    gap: 10px;
+}
+
 img.card-star {
     width: 20px;
     text-shadow: 0 10px 5px 0 black;
@@ -7,7 +13,7 @@ img.card-star {
     position: relative;
 }
 
-.card-status {
+.card-image .card-status {
     position: absolute;
     left: 7px;
     top: 7px;
@@ -20,6 +26,7 @@ img.card-star {
 
 .card-image img {
     border-radius: 9px;
+    height: 250px;
 }
 
 .card-info {

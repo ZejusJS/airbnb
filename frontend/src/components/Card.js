@@ -1,21 +1,21 @@
 import Star from '../images/star.svg'
 
-const Card = ({ img, title, rating, ratingCount, country, price, per }) => {
+const Card = ({ title, description, coverImg, stats, ratingCount, location, price, openSpots, id }) => {
     return (
         <div className="card">
             <div className="card-image">
-                <span className="card-status">SOLD OUT</span>
-                <img src={img} alt="" />
+                {openSpots ? false : <span className="card-status">SOLD OUT</span>}
+                <img src={window.location.origin + '/images/' + coverImg} alt="" />
             </div>
             <div className="card-info">
                 <div className='card-info-1'>
                     <span className='card-rating-con'>
                         <img src={Star} alt="" className='card-star' />
-                        <span className='card-rating'>{rating}</span>
-                        <span className='card-num-rating muted'>({ratingCount})</span>
+                        <span className='card-rating'>{stats.rating}</span>
+                        <span className='card-num-rating muted'>({stats.reviewCount})</span>
                     </span>
                     <span className='muted'>•</span>
-                    <span className='muted'>{country}</span>
+                    <span className='muted'>{location}</span>
                 </div>
                 <div className='card-info-2'>
                     <p className='card-title'>{title}</p>
@@ -23,8 +23,7 @@ const Card = ({ img, title, rating, ratingCount, country, price, per }) => {
                 <div className='card-info-3'>
                     <span className='bold'>From </span>
                     <span className='bold'>${price} </span>
-                    <span className='muted'>/ </span>
-                    <span className='muted'>{per}</span>
+                    <span className='muted'>/ person</span>
                 </div>
             </div>
         </div>
